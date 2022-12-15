@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="menu">
+        <div data-pushbar-id="mypushbar1" data-pushbar-direction="left">
+            Push bar content 1
+            <button data-pushbar-close>Close</button>
+        </div>
+    
+        <div data-pushbar-id="mypushbar2" data-pushbar-direction="bottom">
+            Push bar content 2
+            <button data-pushbar-close>Close</button>
+        </div>
+        <div class="pushbar_main_content">
+            Main content of the page
+    
+            <button data-pushbar-target="mypushbar1">
+            Open my pushbar 1
+            </button>
+    
+            <button data-pushbar-target="mypushbar2">
+            Open my pushbar 2
+            </button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
